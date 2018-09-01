@@ -30,11 +30,13 @@ if [ -z "${myORAENV}" ]; then
 
     source /u01/app/oracle/product/11.2.0/xe/bin/oracle_env.sh
 
+		myOPT_ORACLE=/opt/oracle
+		#myOPT_ORACLE=/opt
 
     for myBIN in                           \
         /usr/lib/oracle/12.2/client64/bin  \
-        /opt/oracle/instantclient_18_3     \
-        /opt/oracle/sqlcl_18_3/bin         \
+        ${myOPT_ORACLE}/instantclient_18_3 \
+				${myOPT_ORACLE}/sqlcl_18_3/bin		 \
         /opt/sqldeveloper/sqldeveloper/bin \
         ; do
         # /opt/instantclient_12_2            \
@@ -50,7 +52,7 @@ if [ -z "${myORAENV}" ]; then
 
     for myLIB in                           \
         /usr/lib/oracle/12.2/client64/lib  \
-        /opt/oracle/instantclient_18_3     \
+        ${myOPT_ORACLE}/instantclient_18_3 \
         ; do
         # /opt/instantclient_12_2            \
         if [ -d "${myLIB}" ]; then
@@ -62,7 +64,7 @@ if [ -z "${myORAENV}" ]; then
         fi
     done
 
-    myTNS_CANDIDATE=/opt/oracle/network/admin/
+    myTNS_CANDIDATE=${myOPT_ORACLE}/network/admin/
     if [ -e ${myTNS_CANDIDATE}/tnsnames.ora ]; then
         export TNS_ADMIN=${myTNS_CANDIDATE}
         # echo TNS_ADMIN now: "${TNS_ADMIN}"
