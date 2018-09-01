@@ -4,7 +4,7 @@
 # $Customer:  none $
 # $Project:   none $
 # $Version:   1 $
-# $Code:      cmd $
+# $Code:      sh $
 # $Writer:    Bruno Grossniklaus $
 # $Remark:    instantclient helper $
 # ##########################################################################
