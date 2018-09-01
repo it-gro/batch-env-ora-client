@@ -1,0 +1,50 @@
+
+tnsnames.ora
+============
+XE =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)
+		           #(HOST = 127.0.0.1)
+		           #(HOST = localhost)
+		           #(HOST = ::1)
+		            (HOST = 0.0.0.0)
+		           #(HOST = ::)
+		           #(HOST = 192.168.2.42)
+               (PORT = 1521)
+    )
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+
+
+sqlnet.ora
+==========
+
+NAMES.DIRECTORY_PATH           = (TNSNAMES,EZCONNECT)
+# SQLNET.AUTHENTICATION_SERVICES = (NTS)
+
+
+listener.ora
+============
+
+SID_LIST_LISTENER =
+
+    (SID_DESC =
+      (SID_NAME = XE)
+      (ORACLE_HOME = C:\oracle\oraclexe11\app\oracle\product\11.2.0\server)
+      #(ORACLE_HOME = /u01/app/oracle/product/11.2.0/xe)
+    )
+
+LISTENER =
+
+      (ADDRESS = (PROTOCOL = TCP)
+		             #(HOST = 127.0.0.1)
+		             #(HOST = localhost)
+		             #(HOST = ::1)
+		              (HOST = 0.0.0.0)
+		             #(HOST = ::)
+		             #(HOST = 192.168.2.42)
+                 (PORT = 1521)
+			)
