@@ -13,8 +13,8 @@
 # ##########################################################################
 # set config
 myBase=$(realpath $(dirname $0))
-export PATH="${myBase}/$(basename $0 .sh)":"$PATH"
-export LD_LIBRARY_PATH="${myBase}/$(basename $0 .sh)":"$LD_LIBRARY_PATH"
+export PATH="${myBase}/$(basename $0 .sh)/bin":"$PATH"
+export LD_LIBRARY_PATH="${myBase}/$(basename $0 .sh)/lib":"$LD_LIBRARY_PATH"
 #export TNS_ADMIN="${myBase}"
 export TNS_ADMIN="${myBase}/network/admin"
 
