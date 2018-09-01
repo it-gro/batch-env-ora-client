@@ -9,9 +9,6 @@ rem $Writer:    Bruno Grossniklaus $
 rem $Remark:    unix which (bash type) for the hell shell $
 rem $Creation:  2002-10-02 $
 rem ############################################################################
-rem $Date: 2004/05/07 15:07:16 $
-rem $Id: which.cmd,v 1.2 2004/05/07 15:07:16 grossnik Exp $
-rem ############################################################################
 
 setlocal
 

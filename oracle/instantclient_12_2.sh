@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # ##########################################################################
 # $Copyright: Bruno Grossniklaus $
 # $Customer:  none $
@@ -7,19 +7,15 @@
 # $Code:      cmd $
 # $Writer:    Bruno Grossniklaus $
 # $Remark:    instantclient helper $
-# $Creation:  $
-# ##########################################################################
-# $Date:      $
-# $Id:        $
 # ##########################################################################
 
 
 # ##########################################################################
 # set config
-cd $(dirname $0)
+cd $(dirname $0) || exit
 export PATH="$(pwd)/$(basename $0 .sh)":"$PATH"
 export LD_LIBRARY_PATH="$(pwd)/$(basename $0 .sh)":"$LD_LIBRARY_PATH"
-export TNS_ADMIN="$(pwd)"
+export TNS_ADMIN="$(realpath $(pwd))"
 cd -
 
 #export NLS_LANG=AMERICAN_SWITZERLAND.AL32UTF8
