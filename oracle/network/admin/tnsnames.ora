@@ -1,7 +1,10 @@
 XE =
   (DESCRIPTION =
     (ADDRESS = (PROTOCOL = TCP)
-      (HOST = localhost ) 
+      (HOST = 0.0.0.0 ) 
+    # (HOST = :: ) 
+    # (HOST = localhost ) 
+    # (HOST = ::1 ) 
     # (HOST = 192.168.2.42) 
       (PORT = 1521)
     )
