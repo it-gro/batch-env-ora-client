@@ -12,9 +12,14 @@ rem ##########################################################################
 rem ##########################################################################
 rem set config
 SET PATH=%~dp0\%~n0\bin;%PATH%
-SET JAVA_HOME=%~dp0\sqldeveloper\jdk\jre
-IF NOT EXIST %JAVA_HOME%\bin\java.exe GOTO no_sqldeveloper
-SET PATH=%JAVA_HOME%\bin;%PATH%
+rem aktuell verwendet sqldeveloper Java 9, sqlcl aber Java 8 
+rem - das wird sich wieder aendern ...
+rem bis dahin auskommentiert:
+rem SET JAVA_HOME=%~dp0\sqldeveloper\jdk\jre
+rem SET JAVA_HOME=%~dp0\sqldeveloper\jdk
+rem IF NOT EXIST %JAVA_HOME%\bin\java.exe GOTO no_sqldeveloper
+rem SET PATH=%JAVA_HOME%\bin;%PATH%
+
 
 rem SET TNS_ADMIN=%~dp0
 SET TNS_ADMIN=%~dp0\network\admin
