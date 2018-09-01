@@ -1,0 +1,12 @@
+XE =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)
+      (HOST = localhost ) 
+    # (HOST = 192.168.2.42) 
+      (PORT = 1521)
+    )
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
