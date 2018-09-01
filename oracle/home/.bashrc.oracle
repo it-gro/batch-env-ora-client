@@ -30,12 +30,15 @@ if [ -z "${myORAENV}" ]; then
 
     source /u01/app/oracle/product/11.2.0/xe/bin/oracle_env.sh
 
+
     for myBIN in                           \
         /usr/lib/oracle/12.2/client64/bin  \
-        /opt/instantclient_12_2            \
-        /opt/sqlcl/bin                     \
+				/opt/oracle/instantclient_18_3		 \
+				/opt/oracle/sqlcl_18_3/bin         \
         /opt/sqldeveloper/sqldeveloper/bin \
         ; do
+        # /opt/instantclient_12_2            \
+        # /opt/sqlcl/bin                     \
         if [ -d "${myBIN}" ]; then
             if echo "${PATH}" | grep -v "${myBIN}" > /dev/null; then
                 export PATH="${myBIN}:${PATH}"   # prepend
@@ -47,8 +50,9 @@ if [ -z "${myORAENV}" ]; then
 
     for myLIB in                           \
         /usr/lib/oracle/12.2/client64/lib  \
-        /opt/instantclient_12_2            \
+        /opt/oracle/instantclient_18_3     \
         ; do
+        # /opt/instantclient_12_2            \
         if [ -d "${myLIB}" ]; then
             if echo "${LD_myLIBRARY_PATH}" | grep -v "${myLIB}" > /dev/null; then
                 export LD_myLIBRARY_PATH="${myLIB}:${LD_myLIBRARY_PATH}"   # prepend
