@@ -6,7 +6,7 @@
 # $Version:   1 $
 # $Code:      sh $
 # $Writer:    Bruno Grossniklaus $
-# $Remark:    sqldeveloper helper $
+# $Remark:    sqlcl helper $
 # ##########################################################################
 
 
@@ -24,5 +24,5 @@ export TNS_ADMIN="$myBase/network/admin"
 #export NLS_LANG=AMERICAN_AMERICA.WE8ISO8859P15
 
 # ##########################################################################
-# start sqldeveloper
-bash "$(myBase)/$(basename $0 .sh)"/$(basename $0)
+# start shell
+bash  # --norc --noprofile
