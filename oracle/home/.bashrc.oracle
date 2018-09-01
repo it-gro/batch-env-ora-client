@@ -54,9 +54,9 @@ if [ -z "${myORAENV}" ]; then
         ; do
         # /opt/instantclient_12_2            \
         if [ -d "${myLIB}" ]; then
-            if echo "${LD_myLIBRARY_PATH}" | grep -v "${myLIB}" > /dev/null; then
-                export LD_myLIBRARY_PATH="${myLIB}:${LD_myLIBRARY_PATH}"   # prepend
-                #export LD_myLIBRARY_PATH="${LD_myLIBRARY_PATH}:${myLIB}"  # append
+            if echo "${LD_LIBRARY_PATH}" | grep -v "${myLIB}" > /dev/null; then
+                export LD_LIBRARY_PATH="${myLIB}:${LD_LIBRARY_PATH}"   # prepend
+                #export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${myLIB}"  # append
                 #echo added "${myLIB}"
             fi
         fi
