@@ -33,8 +33,8 @@ if [ -z "${myORAENV}" ]; then
 
     for myBIN in                           \
         /usr/lib/oracle/12.2/client64/bin  \
-				/opt/oracle/instantclient_18_3		 \
-				/opt/oracle/sqlcl_18_3/bin         \
+        /opt/oracle/instantclient_18_3     \
+        /opt/oracle/sqlcl_18_3/bin         \
         /opt/sqldeveloper/sqldeveloper/bin \
         ; do
         # /opt/instantclient_12_2            \
