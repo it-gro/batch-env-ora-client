@@ -20,14 +20,15 @@
 
 
 # ##########################################################################
+if [ -f "${HOME}/.rlwrap/alias.rlwrap" ]; then
+    source "${HOME}/.rlwrap/alias.rlwrap"
+fi
+
+# ##########################################################################
 if [ -z "${myORAENV}" ]; then
     export myORAENV=1
 
     source /u01/app/oracle/product/11.2.0/xe/bin/oracle_env.sh
-
-    if [ -f "${HOME}/.rlwrap/alias.rlwrap" ]; then
-        source "${HOME}/.rlwrap/alias.rlwrap"
-    fi
 
     for myBIN in                           \
         /usr/lib/oracle/12.2/client64/bin  \
