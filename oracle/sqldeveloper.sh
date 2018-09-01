@@ -6,7 +6,7 @@
 # $Version:   1 $
 # $Code:      sh $
 # $Writer:    Bruno Grossniklaus $
-# $Remark:    instantclient helper $
+# $Remark:    sqldeveloper helper $
 # ##########################################################################
 
 
@@ -24,5 +24,5 @@ export TNS_ADMIN="$myBase/network/admin"
 #export NLS_LANG=AMERICAN_AMERICA.WE8ISO8859P15
 
 # ##########################################################################
-# start shell
-bash  # --norc --noprofile
+# start sqldeveloper
+bash "$(pwd)/$(basename $0 .sh)"/$(basename $0)

@@ -6,7 +6,7 @@ rem $Project:   none $
 rem $Version:   1 $
 rem $Code:      cmd $
 rem $Writer:    Bruno Grossniklaus $
-rem $Remark:    sqlcl helper $
+rem $Remark:    sqldeveloper helper $
 rem ##########################################################################
 
 rem ##########################################################################
