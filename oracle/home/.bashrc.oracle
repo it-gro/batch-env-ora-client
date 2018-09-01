@@ -1,6 +1,25 @@
+#!/usr/bin/env bash
+# ##########################################################################
+# $Copyright: Bruno Grossniklaus $
+# $Customer:  none $
+# $Project:   none $
+# $Version:   1 $
+# $Code:      sh $
+# $Writer:    Bruno Grossniklaus $
+# $Remark:    oracle helper $
+# ##########################################################################
 
-# add to $HOME/.bashrc
 
+# ##########################################################################
+# include in $HOME/.bashrc
+# via
+# if [ -f "${HOME}/.bashrc.oracle" ]; then
+#     source "${HOME}/.bashrc.oracle"
+# fi
+# ##########################################################################
+
+
+# ##########################################################################
 if [ -z "${myORAENV}" ]; then
     export myORAENV=1
 
