@@ -28,7 +28,8 @@ fi
 if [ -z "${myORAENV}" ]; then
     export myORAENV=1
 
-    source /u01/app/oracle/product/11.2.0/xe/bin/oracle_env.sh
+		myOraEnv=/u01/app/oracle/product/11.2.0/xe/bin/oracle_env.sh
+    test -f ${myOraEnv} && source ${myOraEnv}
 
 		myOPT_ORACLE=/opt/oracle
 		#myOPT_ORACLE=/opt
