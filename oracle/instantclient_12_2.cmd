@@ -12,7 +12,8 @@ rem ##########################################################################
 rem ##########################################################################
 rem set config
 SET PATH=%~dp0\%~n0;%PATH%
-SET TNS_ADMIN=%~dp0
+rem SET TNS_ADMIN=%~dp0
+SET TNS_ADMIN=%~dp0\network\admin
 
 REM SET NLS_LANG=AMERICAN_SWITZERLAND.AL32UTF8
 REM SET NLS_LANG=AMERICAN_SWITZERLAND.AL32UTF8

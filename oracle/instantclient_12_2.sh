@@ -15,7 +15,8 @@
 cd $(dirname $0) || exit
 export PATH="$(pwd)/$(basename $0 .sh)":"$PATH"
 export LD_LIBRARY_PATH="$(pwd)/$(basename $0 .sh)":"$LD_LIBRARY_PATH"
-export TNS_ADMIN="$(realpath $(pwd))"
+#export TNS_ADMIN="$(realpath $(pwd))"
+export TNS_ADMIN="$(realpath $(pwd))"/network/admin
 cd -
 
 #export NLS_LANG=AMERICAN_SWITZERLAND.AL32UTF8

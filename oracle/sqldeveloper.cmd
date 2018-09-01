@@ -13,7 +13,8 @@ rem ##########################################################################
 rem set config
 IF NOT EXIST "%~dp0\%~n0\"sqldeveloper.exe GOTO no_sqldeveloper
 
-SET TNS_ADMIN=%~dp0
+rem SET TNS_ADMIN=%~dp0
+SET TNS_ADMIN=%~dp0\network\admin
 
 REM SET NLS_LANG=AMERICAN_SWITZERLAND.AL32UTF8
 REM SET NLS_LANG=AMERICAN_SWITZERLAND.AL32UTF8
