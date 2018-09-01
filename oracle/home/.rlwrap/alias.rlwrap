@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#~/.bashrc:
+#if [ -f $HOME/.rlwrap/alias.rlwrap ]; then
+#    . $HOME/.rlwrap/alias.rlwrap
+#fi
+
+alias mysqlplus="rlwrap -i -f $HOME/.rlwrap/completition.sql -f $HOME/.rlwrap/completition.plsql -c -r sqlplus"
+alias myrman="rlwrap -i -c -r rman"
