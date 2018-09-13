@@ -17,10 +17,12 @@ myBase=$(realpath $(dirname $0))
 #export TNS_ADMIN="${myBase}"
 export TNS_ADMIN="${myBase}/network/admin"
 
+# der SQL Developer hat seine eigene Einstellungen unter
+#   Extras / Voreinstellungen / Datenbank / NLS
 #export NLS_LANG=AMERICAN_SWITZERLAND.AL32UTF8
 #export NLS_LANG=AMERICAN_SWITZERLAND.AL32UTF8
- export NLS_LANG=GERMAN_SWITZERLAND.AL32UTF8
-#export NLS_LANG=AMERICAN_AMERICA.WE8ISO8859P15
+#export NLS_LANG=GERMAN_SWITZERLAND.AL32UTF8
+export NLS_LANG=AMERICAN_AMERICA.WE8ISO8859P15
 
 # ##########################################################################
 # start sqldeveloper
