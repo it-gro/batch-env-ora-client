@@ -22,7 +22,7 @@ export TNS_ADMIN="${myBase}/network/admin"
 #export NLS_LANG=AMERICAN_SWITZERLAND.AL32UTF8
 #export NLS_LANG=AMERICAN_SWITZERLAND.AL32UTF8
 #export NLS_LANG=GERMAN_SWITZERLAND.AL32UTF8
-export NLS_LANG=AMERICAN_AMERICA.WE8ISO8859P15
+#export NLS_LANG=AMERICAN_AMERICA.WE8ISO8859P15
 
 # ##########################################################################
 # start sqldeveloper
