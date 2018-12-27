@@ -6,6 +6,7 @@ XE =
     # (HOST = localhost ) 
     # (HOST = ::1 ) 
     # (HOST = 192.168.2.42) 
+    # (HOST = server123.example.com) 
       (PORT = 1521)
     )
     (CONNECT_DATA =
