@@ -40,8 +40,10 @@ SID_LIST_LISTENER =
 LISTENER =
 
       (ADDRESS = (PROTOCOL = TCP)
-		             #(HOST = 127.0.0.1)
+							   #(HOST = WIN-7K27R0OBEG0)
+							   #(HOST = centos7-01)
 		             #(HOST = localhost)
+		             #(HOST = 127.0.0.1)
 		             #(HOST = ::1)
 		              (HOST = 0.0.0.0)
 		             #(HOST = ::)
